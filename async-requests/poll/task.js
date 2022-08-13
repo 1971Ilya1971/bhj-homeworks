@@ -11,14 +11,13 @@ taskRequest.onreadystatechange = function() {
       
         let itemsArr =  JSON.parse(taskRequest.responseText).data.answers
         itemsArr.forEach(elem => {
-        let button = document.createElement('button');
-        button.className = 'poll__answer';   
-        button.innerHTML = elem;
-        buttons.append(button)  
-        button.onclick = function() {
+          let button = document.createElement('button');
+          button.className = 'poll__answer';   
+          button.innerHTML = elem;
+          buttons.append(button)  
+          button.onclick = function() {
             alert('Спасибо, Ваш голос засчитан!');
-          };      
-        });
-
-    };
-};
+            };      
+         });
+      };
+  };
