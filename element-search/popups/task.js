@@ -6,10 +6,10 @@ let modalSuccess = document.getElementById('modal_success');
 modalMain.classList.add('modal_active');
 
 modalClose.forEach(item => item.onclick = function() {
-    modalMain.classList.remove('modal_active');
+  modalMain.classList.remove('modal_active');
     modalSuccess.classList.remove('modal_active');
 });
 
 showSuccess.onclick = function() {
-    modalSuccess.classList.add('modal_active');
+  modalSuccess.classList.add('modal_active');
 };
