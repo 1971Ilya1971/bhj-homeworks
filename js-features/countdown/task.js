@@ -1,12 +1,12 @@
 let timer = document.getElementById("timer");
 
 function timerMinus() {
-    if (timer.textContent <= 0) {
-        clearInterval(idInterval);
-        alert("Вы победили в конкурсе!");
+  if (timer.textContent <= 0) {
+    clearInterval(idInterval);
+    alert("Вы победили в конкурсе!");
     } else {
-        timer.textContent--;
+      timer.textContent--;
     }
-};
+  };
 
 let idInterval = setInterval(timerMinus, 1000);
