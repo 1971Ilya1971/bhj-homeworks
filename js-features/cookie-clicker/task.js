@@ -9,5 +9,5 @@ cookie.onclick = function() {
     cookie.width = 200;                  
     } else {
       cookie.width = 180;
-      }
     }
+  }
