@@ -7,17 +7,17 @@ taskRequest.send();
 
 taskRequest.onreadystatechange = function() {
   if (taskRequest.readyState === 4) {
-        title.innerHTML = JSON.parse(taskRequest.responseText).data.title
+    title.innerHTML = JSON.parse(taskRequest.responseText).data.title
       
-        let itemsArr =  JSON.parse(taskRequest.responseText).data.answers
-        itemsArr.forEach(elem => {
-          let button = document.createElement('button');
-          button.className = 'poll__answer';   
-          button.innerHTML = elem;
-          buttons.append(button)  
-          button.onclick = function() {
-            alert('Спасибо, Ваш голос засчитан!');
-            };      
-         });
-      };
-  };
+    let itemsArr =  JSON.parse(taskRequest.responseText).data.answers
+    itemsArr.forEach(elem => {
+      let button = document.createElement('button');
+      button.className = 'poll__answer';   
+      button.innerHTML = elem;
+      buttons.append(button)  
+      button.onclick = function() {
+        alert('Спасибо, Ваш голос засчитан!');
+         };      
+      });
+   };
+};
